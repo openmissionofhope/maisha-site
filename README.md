@@ -60,4 +60,4 @@ See [contribute.html](contribute.html) for guidelines.
 
 ## License
 
-Maisha messages are free to use, share, print, and translate. They belong to whoever finds them useful.
+[CC0 1.0 Universal](LICENSE) — No rights reserved. Maisha messages are free to use, share, print, and translate. They belong to whoever finds them useful.

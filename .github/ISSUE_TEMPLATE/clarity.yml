@@ -1,0 +1,41 @@
+name: Suggest Clarity Improvement
+description: Suggest changes to make an existing message clearer
+title: "[Clarity] "
+labels: ["clarity"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Messages should be clear on first reading. If something confused you, it may confuse others.
+
+  - type: textarea
+    id: current
+    attributes:
+      label: Current Message
+      description: Paste the message that needs improvement.
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What is unclear?
+      description: Explain what confused you or could be misunderstood.
+    validations:
+      required: true
+
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested Improvement
+      description: If you have a suggestion for clearer wording, share it here.
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Context
+      description: Is this confusion specific to a certain region, language, or background? Or would it affect most readers?
+    validations:
+      required: false

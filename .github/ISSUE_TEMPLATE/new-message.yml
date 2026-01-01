@@ -1,0 +1,55 @@
+name: Suggest a New Message
+description: Propose a new life-saving message for the collection
+title: "[Message] "
+labels: ["new-message"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for suggesting a message. Good messages are short, safe, and could prevent death or serious harm.
+
+  - type: textarea
+    id: message
+    attributes:
+      label: Proposed Message
+      description: Write the message as you would want it to appear. Keep it short enough to fit in an SMS.
+      placeholder: "When a child has diarrhea, give them fluids..."
+    validations:
+      required: true
+
+  - type: textarea
+    id: topic
+    attributes:
+      label: What situation does this address?
+      description: Briefly describe the health or safety situation this message helps with.
+      placeholder: "This helps parents recognize signs of dehydration in children."
+    validations:
+      required: true
+
+  - type: textarea
+    id: why
+    attributes:
+      label: Why is this message needed?
+      description: Explain why this knowledge could prevent death or serious harm.
+      placeholder: "Many parents don't know that diarrhea can be fatal if fluids aren't replaced."
+    validations:
+      required: true
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Where is this most relevant?
+      description: Are there specific regions, contexts, or communities where this is especially needed?
+      placeholder: "Common in areas with limited access to oral rehydration salts."
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: Safety Check
+      options:
+        - label: This message is safe for someone with no medical training to follow
+          required: true
+        - label: This message does not require professional equipment or medications
+          required: false

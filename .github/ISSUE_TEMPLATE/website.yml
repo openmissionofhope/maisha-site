@@ -1,0 +1,48 @@
+name: Website Issue
+description: Report a problem with the website itself
+title: "[Website] "
+labels: ["website"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this for issues with the website (broken links, display problems, accessibility issues).
+
+  - type: dropdown
+    id: type
+    attributes:
+      label: Issue Type
+      options:
+        - Broken link
+        - Display problem
+        - Accessibility issue
+        - Typo or error
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: page
+    attributes:
+      label: Which page?
+      description: Which page has the issue?
+      placeholder: "messages.html, print.html, etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the problem.
+    validations:
+      required: true
+
+  - type: textarea
+    id: device
+    attributes:
+      label: Device and Browser
+      description: What device and browser were you using? (Optional but helpful)
+      placeholder: "Android phone, Chrome browser"
+    validations:
+      required: false

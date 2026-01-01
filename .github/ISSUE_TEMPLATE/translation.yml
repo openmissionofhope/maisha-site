@@ -1,0 +1,52 @@
+name: Submit a Translation
+description: Translate an existing message into another language
+title: "[Translation] "
+labels: ["translation"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for translating. Translations help messages reach more people in their own language.
+
+  - type: input
+    id: language
+    attributes:
+      label: Language
+      description: What language is this translation in?
+      placeholder: "Swahili, Hindi, French, etc."
+    validations:
+      required: true
+
+  - type: textarea
+    id: original
+    attributes:
+      label: Original Message (English)
+      description: Paste the original English message you are translating.
+    validations:
+      required: true
+
+  - type: textarea
+    id: translation
+    attributes:
+      label: Translation
+      description: Your translation of the message.
+    validations:
+      required: true
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Translation Notes
+      description: Any notes about word choices, regional variations, or things that were difficult to translate.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: fluency
+    attributes:
+      label: Language Fluency
+      options:
+        - label: I am a native or fluent speaker of this language
+          required: true
+        - label: I have read the translation aloud and it sounds natural
+          required: false

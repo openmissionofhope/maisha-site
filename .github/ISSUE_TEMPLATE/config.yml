@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Read the Contribute Guide
+    url: https://openmissionofhope.github.io/maisha-site/contribute.html
+    about: Learn about contribution guidelines before submitting
+  - name: Email Us
+    url: mailto:info@openmissionofhope.org
+    about: Contact us directly with questions or contributions

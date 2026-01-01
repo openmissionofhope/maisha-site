@@ -2,6 +2,8 @@
 
 **Life-saving messages designed for print, SMS, and radio.**
 
+**[maisha.work](https://maisha.work)**
+
 Maisha is a collection of short, practical health and safety messages optimized for low-infrastructure contexts. The messages are designed to travel through paper, voice, text message, and community radio—channels that work when internet and electricity are unreliable.
 
 ## About
